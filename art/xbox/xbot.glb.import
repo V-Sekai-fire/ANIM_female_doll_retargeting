@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://d48fy4uvwp3n"
-path="res://.godot/imported/female_doll_2022_03_05_03.glb-003a95248f62dfaa023ecadb70f1dc36.scn"
+uid="uid://yma6e5nmqpis"
+path="res://.godot/imported/xbot.glb-6c5d2502415fa86841b539f5fb4518c1.scn"
 
 [deps]
 
-source_file="res://SK_female_doll/female_doll_2022_03_05_03.glb"
-dest_files=["res://.godot/imported/female_doll_2022_03_05_03.glb-003a95248f62dfaa023ecadb70f1dc36.scn"]
+source_file="res://art/xbox/xbot.glb"
+dest_files=["res://.godot/imported/xbot.glb-6c5d2502415fa86841b539f5fb4518c1.scn"]
 
 [params]
 

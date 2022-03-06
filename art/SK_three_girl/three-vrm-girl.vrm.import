@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://yma6e5nmqpis"
-path="res://.godot/imported/xbot.glb-72939fdba8fd7f8051feb5c651d42339.scn"
+uid="uid://bs5gn273fx8pa"
+path="res://.godot/imported/three-vrm-girl.vrm-f5f50063eed66869df8ad36e8626d358.scn"
 
 [deps]
 
-source_file="res://SK_female_doll/xbot.glb"
-dest_files=["res://.godot/imported/xbot.glb-72939fdba8fd7f8051feb5c651d42339.scn"]
+source_file="res://art/SK_three_girl/three-vrm-girl.vrm"
+dest_files=["res://.godot/imported/three-vrm-girl.vrm-f5f50063eed66869df8ad36e8626d358.scn"]
 
 [params]
 
