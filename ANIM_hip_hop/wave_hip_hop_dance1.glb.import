@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://krcnssh1qy20"
-path="res://.godot/imported/wave_hip_hop_dance1.glb-813421e8a347ebdd4ae3561057e75fa4.scn"
+path="res://.godot/imported/wave_hip_hop_dance1.glb-7a516dc1b790cff65ab5661376d8829d.scn"
 
 [deps]
 
-source_file="res://SK_female_doll/wave_hip_hop_dance1.glb"
-dest_files=["res://.godot/imported/wave_hip_hop_dance1.glb-813421e8a347ebdd4ae3561057e75fa4.scn"]
+source_file="res://ANIM_hip_hop/wave_hip_hop_dance1.glb"
+dest_files=["res://.godot/imported/wave_hip_hop_dance1.glb-7a516dc1b790cff65ab5661376d8829d.scn"]
 
 [params]
 
