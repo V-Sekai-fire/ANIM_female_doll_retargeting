@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://yma6e5nmqpis"
-path="res://.godot/imported/xbot.glb-88e0d9820cc2519e418aef6d698a1ddc.scn"
+uid="uid://krcnssh1qy20"
+path="res://.godot/imported/wave_hip_hop_dance1.glb-813421e8a347ebdd4ae3561057e75fa4.scn"
 
 [deps]
 
-source_file="res://05_export_vrm_color_texture/xbot.glb"
-dest_files=["res://.godot/imported/xbot.glb-88e0d9820cc2519e418aef6d698a1ddc.scn"]
+source_file="res://SK_female_doll/wave_hip_hop_dance1.glb"
+dest_files=["res://.godot/imported/wave_hip_hop_dance1.glb-813421e8a347ebdd4ae3561057e75fa4.scn"]
 
 [params]
 

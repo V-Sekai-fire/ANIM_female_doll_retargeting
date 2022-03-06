@@ -1,11 +1,11 @@
-[gd_scene load_steps=7 format=3 uid="uid://dmdfeorefyk86"]
+[gd_scene load_steps=7 format=3]
 
-[ext_resource type="PackedScene" uid="uid://d48fy4uvwp3n" path="res://05_export_vrm_color_texture/female_doll_2022_03_05_03.glb" id="1_5scs5"]
-[ext_resource type="PackedScene" uid="uid://obj2fk1kynfy" path="res://05_export_vrm_color_texture/SK_female_doll.vrm" id="2_rhm3f"]
+[ext_resource type="PackedScene" path="res://SK_female_doll/female_doll_2022_03_05_03.glb" id="1_5scs5"]
+[ext_resource type="PackedScene" path="res://SK_female_doll/SK_female_doll.vrm" id="2_rhm3f"]
 [ext_resource type="RetargetRichProfile" path="res://profiles/gd_humanoid_mixamo.tres" id="3_u4sij"]
 [ext_resource type="RetargetBoneMap" uid="uid://d2wh32fl0op23" path="res://models/female_doll_vrm_map.tres" id="4_d380e"]
 [ext_resource type="RetargetBoneMap" uid="uid://b41gxip8w12xa" path="res://models/female_doll_map.tres" id="4_jab67"]
-[ext_resource type="PackedScene" uid="uid://bhn21qnf2c6l0" path="res://05_export_vrm_color_texture/xbot_flair.glb" id="6_2fasm"]
+[ext_resource type="PackedScene" path="res://05_export_vrm_color_texture/xbot_flair.glb" id="6_2fasm"]
 
 [node name="Node3D" type="Node3D"]
 

@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://bs5gn273fx8pa"
-path="res://.godot/imported/three-vrm-girl.vrm-f6c3d173756a708b3eefefaf3d4fae25.scn"
+uid="uid://d3jqne4a3neph"
+path="res://.godot/imported/Animation Retargeting.glb-f8b4dade4b16a24c31888f81d7a3b111.scn"
 
 [deps]
 
-source_file="res://05_export_vrm_color_texture/three-vrm-girl.vrm"
-dest_files=["res://.godot/imported/three-vrm-girl.vrm-f6c3d173756a708b3eefefaf3d4fae25.scn"]
+source_file="res://text/Animation Retargeting.glb"
+dest_files=["res://.godot/imported/Animation Retargeting.glb-f8b4dade4b16a24c31888f81d7a3b111.scn"]
 
 [params]
 

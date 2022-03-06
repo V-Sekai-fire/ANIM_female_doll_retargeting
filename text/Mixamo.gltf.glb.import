@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://obj2fk1kynfy"
-path="res://.godot/imported/SK_female_doll.vrm-cae2462eded48b9b92107cef896eb20c.scn"
+uid="uid://beykn0wpdjfti"
+path="res://.godot/imported/Mixamo.gltf.glb-144f47c5124439498041270700a0a505.scn"
 
 [deps]
 
-source_file="res://05_export_vrm_color_texture/SK_female_doll.vrm"
-dest_files=["res://.godot/imported/SK_female_doll.vrm-cae2462eded48b9b92107cef896eb20c.scn"]
+source_file="res://text/Mixamo.gltf.glb"
+dest_files=["res://.godot/imported/Mixamo.gltf.glb-144f47c5124439498041270700a0a505.scn"]
 
 [params]
 

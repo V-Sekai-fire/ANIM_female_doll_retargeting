@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://krcnssh1qy20"
-path="res://.godot/imported/wave_hip_hop_dance1.glb-ee231b9fc0bf558f7cbd600ada90b8f3.scn"
+uid="uid://d48fy4uvwp3n"
+path="res://.godot/imported/female_doll_2022_03_05_03.glb-003a95248f62dfaa023ecadb70f1dc36.scn"
 
 [deps]
 
-source_file="res://05_export_vrm_color_texture/wave_hip_hop_dance1.glb"
-dest_files=["res://.godot/imported/wave_hip_hop_dance1.glb-ee231b9fc0bf558f7cbd600ada90b8f3.scn"]
+source_file="res://SK_female_doll/female_doll_2022_03_05_03.glb"
+dest_files=["res://.godot/imported/female_doll_2022_03_05_03.glb-003a95248f62dfaa023ecadb70f1dc36.scn"]
 
 [params]
 
