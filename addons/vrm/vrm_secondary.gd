@@ -52,7 +52,7 @@ func check_for_editor_update() -> bool:
 		if not parent.update_in_editor and update_in_editor:
 			update_in_editor = false
 			for spring_bone in spring_bones_internal:
-				spring_bone.skel.clear_bones_pose_override()
+				spring_bone.skel.clear_bones_local_pose_override()
 	return update_in_editor
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -126,10 +126,10 @@ class SecondaryGizmo:
 				var s_sk: Skeleton3D = spring_bone.skel
 				if Engine.is_editor_hint():
 					s_sk = secondary_node.get_node_or_null(spring_bone.skeleton)
-					s_tr = s_sk.get_bone_pose_override(v.bone_idx)
+					s_tr = s_sk.get_bone_local_pose_override(v.bone_idx)
 					s_tr = s_sk.local_pose_to_global_pose(v.bone_idx, s_tr)
 				else:
-					s_tr = spring_bone.skel.get_bone_pose_override(v.bone_idx)
+					s_tr = spring_bone.skel.get_bone_local_pose_override(v.bone_idx)
 					s_tr = spring_bone.skel.local_pose_to_global_pose(v.bone_idx, s_tr)
 				draw_line(
 					s_tr.origin,
@@ -143,10 +143,10 @@ class SecondaryGizmo:
 				var s_sk: Skeleton3D = spring_bone.skel
 				if Engine.is_editor_hint():
 					s_sk = secondary_node.get_node_or_null(spring_bone.skeleton)
-					s_tr = s_sk.get_bone_pose(v.bone_idx)
+					s_tr = s_sk.get_bone_local_pose(v.bone_idx)
 					s_tr = s_sk.local_pose_to_global_pose(v.bone_idx, s_tr)
 				else:
-					s_tr = spring_bone.skel.get_bone_pose(v.bone_idx)
+					s_tr = spring_bone.skel.get_bone_local_pose(v.bone_idx)
 					s_tr = spring_bone.skel.get_bone_global_pose_no_override(v.bone_idx)
 				draw_sphere(
 					s_tr.basis,
@@ -164,7 +164,7 @@ class SecondaryGizmo:
 			if Engine.is_editor_hint():
 				var c_sk: Node = secondary_node.get_node_or_null(collider_group.skeleton_or_node)
 				if c_sk is Skeleton3D:
-					c_tr = c_sk.get_bone_pose(c_sk.find_bone(collider_group.bone))
+					c_tr = c_sk.get_bone_local_pose(c_sk.find_bone(collider_group.bone))
 					c_tr = c_sk.local_pose_to_global_pose(c_sk.find_bone(collider_group.bone), c_tr)
 			elif collider_group.parent is Skeleton3D:
 				c_tr = collider_group.skel.get_bone_global_pose_no_override(collider_group.parent.find_bone(collider_group.bone))

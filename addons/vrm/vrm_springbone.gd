@@ -112,7 +112,7 @@ class VRMSpringBoneLogic:
 		return get_local_transform(skel).basis.get_rotation_quaternion()
 
 	func reset(skel: Skeleton3D) -> void:
-		skel.set_bone_pose_override(bone_idx, initial_transform, true)
+		skel.set_bone_local_pose_override(bone_idx, initial_transform, 1.0, true)
 
 	func _init(skel: Skeleton3D, idx: int, center, local_child_position: Vector3, default_pose: Transform3D) -> void:
 		initial_transform = default_pose
@@ -162,7 +162,7 @@ class VRMSpringBoneLogic:
 			var tr: Transform3D = get_local_transform(skel)
 			tr.basis = Basis(qt.normalized())
 			tr = skel.global_pose_to_local_pose(bone_idx, tr)
-			skel.set_bone_pose_override(bone_idx, tr, true)
+			skel.set_bone_local_pose_override(bone_idx, tr, 1.0, true)
 
 
 	func collision(skel: Skeleton3D, colliders: Array, _next_tail: Vector3) -> Vector3:
