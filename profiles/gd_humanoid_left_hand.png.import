@@ -1,9 +1,9 @@
 [remap]
 
 importer="texture"
-type="StreamTexture2D"
+type="CompressedTexture2D"
 uid="uid://u6pktn46aeld"
-path="res://.godot/imported/gd_humanoid_left_hand.png-adcb1b67146efc92563d668c16415e14.stex"
+path="res://.godot/imported/gd_humanoid_left_hand.png-adcb1b67146efc92563d668c16415e14.ctex"
 metadata={
 "vram_texture": false
 }
@@ -11,7 +11,7 @@ metadata={
 [deps]
 
 source_file="res://profiles/gd_humanoid_left_hand.png"
-dest_files=["res://.godot/imported/gd_humanoid_left_hand.png-adcb1b67146efc92563d668c16415e14.stex"]
+dest_files=["res://.godot/imported/gd_humanoid_left_hand.png-adcb1b67146efc92563d668c16415e14.ctex"]
 
 [params]
 
