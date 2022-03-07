@@ -38,7 +38,7 @@ VSKImporter="*res://addons/vsk_importer_exporter/vsk_importer.gd"
 
 [editor_plugins]
 
-enabled=PackedStringArray()
+enabled=PackedStringArray("res://addons/Godot-MToon-Shader/plugin.cfg", "res://addons/vrm/plugin.cfg")
 
 [entities]
 
