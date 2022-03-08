@@ -1,12 +1,12 @@
-[gd_scene load_steps=16 format=3]
+[gd_scene load_steps=16 format=3 uid="uid://b7g3mktex0sn4"]
 
 [ext_resource type="PackedScene" uid="uid://obj2fk1kynfy" path="res://animation_retargeting_demo/art/SK_female_doll/SK_female_doll.vrm" id="1_k7dqa"]
-[ext_resource type="PackedScene" path="res://animation_retargeting_demo/art/text/Mixamo.gltf.glb" id="2_ubkrf"]
-[ext_resource type="PackedScene" path="res://animation_retargeting_demo/art/ANIM_play_violin/xbotPlaying The Violin2.tscn" id="3_14hva"]
-[ext_resource type="PackedScene" path="res://animation_retargeting_demo/art/text/VRM.gltf.glb" id="4_36khh"]
+[ext_resource type="PackedScene" uid="uid://beykn0wpdjfti" path="res://animation_retargeting_demo/art/text/Mixamo.gltf.glb" id="2_ubkrf"]
+[ext_resource type="PackedScene" uid="uid://c3y4lao76hnq1" path="res://animation_retargeting_demo/art/ANIM_play_violin/xbotPlaying The Violin2.tscn" id="3_14hva"]
+[ext_resource type="PackedScene" uid="uid://baftw5t4666kr" path="res://animation_retargeting_demo/art/text/VRM.gltf.glb" id="4_36khh"]
 [ext_resource type="RetargetRichProfile" path="res://animation_retargeting_demo/profiles/gd_humanoid.tres" id="5_028l4"]
-[ext_resource type="RetargetBoneMap" path="res://animation_retargeting_demo/art/models/female_doll_vrm_map.tres" id="6_2es8s"]
-[ext_resource type="RetargetBoneMap" path="res://animation_retargeting_demo/art/models/violin_vrm_map.tres" id="7_eh2kw"]
+[ext_resource type="RetargetBoneMap" uid="uid://b41gxip8w12xa" path="res://animation_retargeting_demo/art/models/female_doll_map.tres" id="6_2es8s"]
+[ext_resource type="RetargetBoneMap" uid="uid://be7mocsvdcbr0" path="res://animation_retargeting_demo/art/models/violin_vrm_map.tres" id="7_eh2kw"]
 
 [sub_resource type="Animation" id="Animation_udq7l"]
 tracks/0/type = "scale_3d"
@@ -818,15 +818,12 @@ tracks/52/keys = PackedFloat32Array(0, 1, -0.0634305, -8.00629e-08, -6.42761e-09
 [node name="SK_female_doll" parent="." instance=ExtResource( "1_k7dqa" )]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.91226, 0, -1.20309)
 
-[node name="VRM" parent="SK_female_doll" instance=ExtResource( "4_36khh" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.2588, 2, 0.0956099)
-
-[node name="Skeleton3D" parent="SK_female_doll" index="1"]
+[node name="Skeleton3D" parent="SK_female_doll" index="0"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.256317, -0.128805, 0.119831)
 bones/0/rest = Transform3D(-1, 0, 0, 0, 1, 0, 0, 0, -1, 1.8e-05, 0.955229, 0.00214899)
 bones/0/rotation = Quaternion(0, 1, 0, 0)
 
-[node name="anim" parent="SK_female_doll" index="3"]
+[node name="anim" parent="SK_female_doll" index="2"]
 anims/FirstPerson = SubResource( "Animation_udq7l" )
 anims/LOOKDOWN = SubResource( "Animation_n48ii" )
 anims/LOOKLEFT = SubResource( "Animation_vgfqt" )
@@ -834,23 +831,18 @@ anims/LOOKRIGHT = SubResource( "Animation_lxsys" )
 anims/LOOKUP = SubResource( "Animation_7d5si" )
 anims/ThirdPerson = SubResource( "Animation_vqr5y" )
 
+[node name="VRM" parent="SK_female_doll" instance=ExtResource( "4_36khh" )]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.2588, 2, 0.0956099)
+
 [node name="xbotPlaying The Violin2" parent="." instance=ExtResource( "3_14hva" )]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.00091, 0, -1.10748)
 
-[node name="Mixamogltf" parent="xbotPlaying The Violin2" instance=ExtResource( "2_ubkrf" )]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.02, 0)
-
-[node name="Skeleton3D" parent="xbotPlaying The Violin2/RootNode" index="0"]
-bones/12/rotation = Quaternion(-0.117381, 0.0400278, 0.0744911, 0.98948)
-bones/13/rotation = Quaternion(0.00706999, 0.0362462, -0.486428, 0.87294)
-bones/14/rotation = Quaternion(3.2338e-10, 0.0570343, -0.559045, 0.827173)
-bones/19/rotation = Quaternion(-0.0149026, 0.0721719, -0.585442, 0.807358)
-bones/35/rotation = Quaternion(-0.0126654, -0.0469828, 0.454939, 0.889192)
-bones/39/rotation = Quaternion(1.72565e-08, -0.0383873, 0.473951, 0.879714)
-
-[node name="AnimationPlayer" parent="xbotPlaying The Violin2" index="2"]
+[node name="AnimationPlayer" parent="xbotPlaying The Violin2" index="1"]
 "anims/Take 001" = SubResource( "Animation_hotce" )
 anims/mixamocom = SubResource( "Animation_5imv6" )
+
+[node name="Mixamogltf" parent="xbotPlaying The Violin2" instance=ExtResource( "2_ubkrf" )]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.02, 0)
 
 [node name="ViolinDanceRetarget" type="SkeletonRetarget" parent="."]
 retarget_profile = ExtResource( "5_028l4" )
