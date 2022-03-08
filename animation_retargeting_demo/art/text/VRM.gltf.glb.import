@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://obj2fk1kynfy"
-path="res://.godot/imported/SK_female_doll.vrm-1f8d36b0bb0efe4fb21584d2aad2d3c3.scn"
+uid="uid://baftw5t4666kr"
+path="res://.godot/imported/VRM.gltf.glb-978648af6988f95bfd879cb52fa336b4.scn"
 
 [deps]
 
-source_file="res://art/SK_female_doll/SK_female_doll.vrm"
-dest_files=["res://.godot/imported/SK_female_doll.vrm-1f8d36b0bb0efe4fb21584d2aad2d3c3.scn"]
+source_file="res://animation_retargeting_demo/art/text/VRM.gltf.glb"
+dest_files=["res://.godot/imported/VRM.gltf.glb-978648af6988f95bfd879cb52fa336b4.scn"]
 
 [params]
 

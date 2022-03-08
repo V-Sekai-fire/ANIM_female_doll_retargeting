@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cwqdqoo2acbvk"
-path="res://.godot/imported/gd_humanoid_body.png-043e958ee7b2f2475ea2f46eb44d735d.ctex"
+path="res://.godot/imported/gd_humanoid_body.png-474d9535f39fe9d008661e8c449d589e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://profiles/gd_humanoid_body.png"
-dest_files=["res://.godot/imported/gd_humanoid_body.png-043e958ee7b2f2475ea2f46eb44d735d.ctex"]
+source_file="res://animation_retargeting_demo/profiles/gd_humanoid_body.png"
+dest_files=["res://.godot/imported/gd_humanoid_body.png-474d9535f39fe9d008661e8c449d589e.ctex"]
 
 [params]
 

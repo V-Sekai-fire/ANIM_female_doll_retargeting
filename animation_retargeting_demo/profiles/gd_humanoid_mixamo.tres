@@ -1,9 +1,9 @@
 [gd_resource type="RetargetRichProfile" load_steps=5 format=3]
 
-[ext_resource type="Texture2D" uid="uid://cwqdqoo2acbvk" path="res://profiles/gd_humanoid_body.png" id="1_fdp08"]
-[ext_resource type="Texture2D" uid="uid://bumq11rwivau" path="res://profiles/gd_humanoid_face.png" id="2_ih4uy"]
-[ext_resource type="Texture2D" uid="uid://u6pktn46aeld" path="res://profiles/gd_humanoid_left_hand.png" id="3_bwufv"]
-[ext_resource type="Texture2D" uid="uid://bsg40obrvvvbm" path="res://profiles/gd_humanoid_right_hand.png" id="4_1axk4"]
+[ext_resource type="Texture2D" path="res://animation_retargeting_demo/profiles/gd_humanoid_body.png" id="1_fdp08"]
+[ext_resource type="Texture2D" path="res://animation_retargeting_demo/profiles/gd_humanoid_face.png" id="2_ih4uy"]
+[ext_resource type="Texture2D" path="res://animation_retargeting_demo/profiles/gd_humanoid_left_hand.png" id="3_bwufv"]
+[ext_resource type="Texture2D" path="res://animation_retargeting_demo/profiles/gd_humanoid_right_hand.png" id="4_1axk4"]
 
 [resource]
 groups/0/group_name = &"Body"

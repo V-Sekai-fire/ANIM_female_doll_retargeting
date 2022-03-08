@@ -1,8 +1,8 @@
-[gd_scene load_steps=7 format=3 uid="uid://cn3etaaux58m"]
+[gd_scene load_steps=7 format=3 uid="uid://dy57cwgierkct"]
 
-[ext_resource type="PackedScene" uid="uid://dy3caiksoimde" path="res://text/Animation Retargeting.svg" id="1_74755"]
-[ext_resource type="PackedScene" uid="uid://cotv2i6wnqj71" path="res://scenes/ViolinDance.tscn" id="4_bw6t1"]
-[ext_resource type="PackedScene" uid="uid://bj1svcqriv6m4" path="res://scenes/WaveHipHopDance.tscn" id="9_5r2jj"]
+[ext_resource type="PackedScene" uid="uid://dy3caiksoimde" path="res://animation_retargeting_demo/art/text/Animation Retargeting.svg" id="1_74755"]
+[ext_resource type="PackedScene" path="res://animation_retargeting_demo/scenes/ViolinDance.tscn" id="4_bw6t1"]
+[ext_resource type="PackedScene" path="res://animation_retargeting_demo/scenes/WaveHipHopDance.tscn" id="9_5r2jj"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_sgml0"]
 sky_horizon_color = Color(0.717819, 0.733108, 0.757108, 1)

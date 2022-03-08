@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://d3jqne4a3neph"
-path="res://.godot/imported/Animation Retargeting.glb-f8b4dade4b16a24c31888f81d7a3b111.scn"
+path="res://.godot/imported/Animation Retargeting.glb-07c2e735a358ac494a9eb2f53dcda521.scn"
 
 [deps]
 
-source_file="res://text/Animation Retargeting.glb"
-dest_files=["res://.godot/imported/Animation Retargeting.glb-f8b4dade4b16a24c31888f81d7a3b111.scn"]
+source_file="res://animation_retargeting_demo/art/text/Animation Retargeting.glb"
+dest_files=["res://.godot/imported/Animation Retargeting.glb-07c2e735a358ac494a9eb2f53dcda521.scn"]
 
 [params]
 

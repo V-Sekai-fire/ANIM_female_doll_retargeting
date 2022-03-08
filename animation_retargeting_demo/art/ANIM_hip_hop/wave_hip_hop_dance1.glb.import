@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://bb452kv4mivyt"
-path="res://.godot/imported/ANIM_wave_hip_hop_dance.gltf.glb-65eb64b8997c5916a424a5eb7f23e762.scn"
+uid="uid://krcnssh1qy20"
+path="res://.godot/imported/wave_hip_hop_dance1.glb-71e7d2647897dccd7672937877254dd7.scn"
 
 [deps]
 
-source_file="res://text/ANIM_wave_hip_hop_dance.gltf.glb"
-dest_files=["res://.godot/imported/ANIM_wave_hip_hop_dance.gltf.glb-65eb64b8997c5916a424a5eb7f23e762.scn"]
+source_file="res://animation_retargeting_demo/art/ANIM_hip_hop/wave_hip_hop_dance1.glb"
+dest_files=["res://.godot/imported/wave_hip_hop_dance1.glb-71e7d2647897dccd7672937877254dd7.scn"]
 
 [params]
 

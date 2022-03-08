@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://bs7esjhiwaba2"
-path="res://.godot/imported/Mixamo.svg-90bca9ae313b2c259f60324fc52e7774.scn"
+uid="uid://c6sxp1px0a05w"
+path="res://.godot/imported/VRM.svg-f2321a793e55efb30f0f121d03e100d6.scn"
 
 [deps]
 
-source_file="res://text/Mixamo.svg"
-dest_files=["res://.godot/imported/Mixamo.svg-90bca9ae313b2c259f60324fc52e7774.scn"]
+source_file="res://animation_retargeting_demo/art/text/VRM.svg"
+dest_files=["res://.godot/imported/VRM.svg-f2321a793e55efb30f0f121d03e100d6.scn"]
 
 [params]
 

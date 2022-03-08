@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://cwux7wfrl0ecn"
-path="res://.godot/imported/xbot@Playing The Violin.glb-8dbcac68f9076ba16551aedca37e7a4c.scn"
+uid="uid://d48fy4uvwp3n"
+path="res://.godot/imported/female_doll_2022_03_05_03.glb-b06d4f959909fd0ff135d19e47cf7e9b.scn"
 
 [deps]
 
-source_file="res://ANIM_play_violin/xbot@Playing The Violin.glb"
-dest_files=["res://.godot/imported/xbot@Playing The Violin.glb-8dbcac68f9076ba16551aedca37e7a4c.scn"]
+source_file="res://animation_retargeting_demo/art/SK_female_doll/female_doll_2022_03_05_03.glb"
+dest_files=["res://.godot/imported/female_doll_2022_03_05_03.glb-b06d4f959909fd0ff135d19e47cf7e9b.scn"]
 
 [params]
 

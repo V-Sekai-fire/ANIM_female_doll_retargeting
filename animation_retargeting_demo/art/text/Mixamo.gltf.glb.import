@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://dy3caiksoimde"
-path="res://.godot/imported/Animation Retargeting.svg-51023dc8fc401d0ae29708f1a6582b2e.scn"
+uid="uid://beykn0wpdjfti"
+path="res://.godot/imported/Mixamo.gltf.glb-0e2814cfd105f3d0811fbb72d37d5732.scn"
 
 [deps]
 
-source_file="res://text/Animation Retargeting.svg"
-dest_files=["res://.godot/imported/Animation Retargeting.svg-51023dc8fc401d0ae29708f1a6582b2e.scn"]
+source_file="res://animation_retargeting_demo/art/text/Mixamo.gltf.glb"
+dest_files=["res://.godot/imported/Mixamo.gltf.glb-0e2814cfd105f3d0811fbb72d37d5732.scn"]
 
 [params]
 

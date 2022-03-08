@@ -1,12 +1,12 @@
-[gd_scene load_steps=12 format=3 uid="uid://bj1svcqriv6m4"]
+[gd_scene load_steps=12 format=3]
 
-[ext_resource type="PackedScene" uid="uid://b8hrdk0ys06qq" path="res://ANIM_hip_hop/wave_hip_hop_dance.tscn" id="1_wtetf"]
-[ext_resource type="PackedScene" uid="uid://bb452kv4mivyt" path="res://text/ANIM_wave_hip_hop_dance.gltf.glb" id="2_fq6oc"]
-[ext_resource type="PackedScene" uid="uid://d48fy4uvwp3n" path="res://art/SK_female_doll/female_doll_2022_03_05_03.glb" id="3_oj7v8"]
-[ext_resource type="PackedScene" uid="uid://baftw5t4666kr" path="res://text/VRM.gltf.glb" id="4_ba5fd"]
-[ext_resource type="RetargetRichProfile" uid="uid://b2pjclia5lmhq" path="res://profiles/gd_humanoid.tres" id="5_bv6kj"]
-[ext_resource type="RetargetBoneMap" uid="uid://cce134pih6sq6" path="res://models/mixamo_map.tres" id="6_4tpjs"]
-[ext_resource type="RetargetBoneMap" uid="uid://b41gxip8w12xa" path="res://models/female_doll_map.tres" id="7_jeifn"]
+[ext_resource type="PackedScene" path="res://animation_retargeting_demo/art/ANIM_hip_hop/wave_hip_hop_dance.tscn" id="1_wtetf"]
+[ext_resource type="PackedScene" path="res://animation_retargeting_demo/art/text/ANIM_wave_hip_hop_dance.gltf.glb" id="2_fq6oc"]
+[ext_resource type="PackedScene" uid="uid://d48fy4uvwp3n" path="res://animation_retargeting_demo/art/SK_female_doll/female_doll_2022_03_05_03.glb" id="3_oj7v8"]
+[ext_resource type="PackedScene" path="res://animation_retargeting_demo/art/text/VRM.gltf.glb" id="4_ba5fd"]
+[ext_resource type="RetargetRichProfile" path="res://animation_retargeting_demo/profiles/gd_humanoid.tres" id="5_bv6kj"]
+[ext_resource type="RetargetBoneMap" path="res://animation_retargeting_demo/art/models/mixamo_map.tres" id="6_4tpjs"]
+[ext_resource type="RetargetBoneMap" path="res://animation_retargeting_demo/art/models/female_doll_map.tres" id="7_jeifn"]
 
 [sub_resource type="Animation" id="Animation_pva6d"]
 resource_name = "Armature|Armature001|mixamocom|Layer0"
