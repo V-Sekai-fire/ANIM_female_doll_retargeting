@@ -9,26 +9,6 @@
 config_version=5
 
 _global_script_classes=[{
-"base": "Node",
-"class": &"ComponentNode",
-"language": &"GDScript",
-"path": "res://addons/entity_manager/component_node.gd"
-}, {
-"base": "Node",
-"class": &"Entity",
-"language": &"GDScript",
-"path": "res://addons/entity_manager/entity.gd"
-}, {
-"base": "Node",
-"class": &"EntityManagerFunctions",
-"language": &"GDScript",
-"path": "res://addons/entity_manager/entity_manager_functions.gd"
-}, {
-"base": "RefCounted",
-"class": &"EntityRef",
-"language": &"GDScript",
-"path": "res://addons/entity_manager/entity_ref.gd"
-}, {
 "base": "Resource",
 "class": &"HumanoidData",
 "language": &"GDScript",
@@ -39,12 +19,12 @@ _global_script_classes=[{
 "language": &"GDScript",
 "path": "res://addons/network_manager/network_hierarchy.gd"
 }, {
-"base": "Node",
+"base": "",
 "class": &"NetworkIdentity",
 "language": &"GDScript",
 "path": "res://addons/network_manager/network_identity.gd"
 }, {
-"base": "Node",
+"base": "",
 "class": &"NetworkLogic",
 "language": &"GDScript",
 "path": "res://addons/network_manager/network_logic.gd"
@@ -54,7 +34,7 @@ _global_script_classes=[{
 "language": &"GDScript",
 "path": "res://addons/network_manager/network_physics.gd"
 }, {
-"base": "Node",
+"base": "",
 "class": &"NetworkRPCTable",
 "language": &"GDScript",
 "path": "res://addons/network_manager/network_rpc_table.gd"
@@ -69,21 +49,6 @@ _global_script_classes=[{
 "language": &"GDScript",
 "path": "res://addons/network_manager/network_transform.gd"
 }, {
-"base": "Node",
-"class": &"RuntimeEntity",
-"language": &"GDScript",
-"path": "res://addons/entity_manager/runtime_entity.gd"
-}, {
-"base": "Node",
-"class": &"SimulationLogic",
-"language": &"GDScript",
-"path": "res://addons/entity_manager/simulation_logic.gd"
-}, {
-"base": "RefCounted",
-"class": &"StrongExclusiveEntityDependencyHandle",
-"language": &"GDScript",
-"path": "res://addons/entity_manager/strong_exclusive_entity_dependency_handle.gd"
-}, {
 "base": "Node3D",
 "class": &"VRMTopLevel",
 "language": &"GDScript",
@@ -95,10 +60,6 @@ _global_script_classes=[{
 "path": "res://addons/vsk_map/vsk_map_entity_instance_record.gd"
 }]
 _global_script_class_icons={
-"ComponentNode": "",
-"Entity": "",
-"EntityManagerFunctions": "",
-"EntityRef": "",
 "HumanoidData": "",
 "NetworkHierarchy": "",
 "NetworkIdentity": "",
@@ -107,9 +68,6 @@ _global_script_class_icons={
 "NetworkRPCTable": "",
 "NetworkSpawn": "",
 "NetworkTransform": "",
-"RuntimeEntity": "",
-"SimulationLogic": "",
-"StrongExclusiveEntityDependencyHandle": "",
 "VRMTopLevel": "",
 "VSKMapEntityInstanceRecord": ""
 }
@@ -134,7 +92,7 @@ VSKImporter="*res://addons/vsk_importer_exporter/vsk_importer.gd"
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/Godot-MToon-Shader/plugin.cfg", "res://addons/correct_bone_direction/plugin.cfg", "res://addons/math_util/plugin.cfg", "res://addons/network_manager/plugin.cfg", "res://addons/sar1_log_manager/plugin.cfg", "res://addons/vrm/plugin.cfg", "res://addons/vsk_avatar/plugin.cfg", "res://addons/vsk_importer_exporter/plugin.cfg")
+enabled=PackedStringArray("res://addons/Godot-MToon-Shader/plugin.cfg", "res://addons/correct_bone_direction/plugin.cfg", "res://addons/gd_util/plugin.cfg", "res://addons/math_util/plugin.cfg", "res://addons/network_manager/plugin.cfg", "res://addons/sar1_log_manager/plugin.cfg", "res://addons/vrm/plugin.cfg", "res://addons/vsk_avatar/plugin.cfg", "res://addons/vsk_importer_exporter/plugin.cfg", "res://addons/vsk_map/plugin.cfg")
 
 [entities]
 
