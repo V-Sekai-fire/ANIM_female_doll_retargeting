@@ -75,7 +75,6 @@ _global_script_class_icons={
 [application]
 
 config/name="Skeleton Female Doll Project"
-run/main_scene="res://animation_retargeting_demo/scenes/female_doll_retarget_fk.tscn"
 config/icon="res://icon.png"
 config/features=PackedStringArray("4.0", "Vulkan Clustered")
 
