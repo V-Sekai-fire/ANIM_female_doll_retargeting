@@ -43,3 +43,6 @@ size = 3.71
 
 [node name="Animation Retargeting" parent="." instance=ExtResource( "1_74755" )]
 transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 1, -1.373, 2.645, -1.665)
+
+[editable path="WaveHipHopDance"]
+[editable path="WaveHipHopDance/Animations/wave_hip_hop_dance"]
