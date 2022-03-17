@@ -1,0 +1,33 @@
+[gd_resource type="RetargetBoneOption" format=3 uid="uid://1wuuoo3gnryc"]
+
+[resource]
+RightRingProximal/retarget_mode = 1
+RightIndexDistal/retarget_mode = 1
+LeftRingProximal/retarget_mode = 1
+RightThumbIntermediate/retarget_mode = 1
+LeftIndexProximal/retarget_mode = 1
+RightMiddleIntermediate/retarget_mode = 1
+RightIndexProximal/retarget_mode = 1
+LeftRingDistal/retarget_mode = 1
+RightIndexIntermediate/retarget_mode = 1
+LeftThumbProximal/retarget_mode = 1
+RightThumbDistal/retarget_mode = 1
+LeftRingIntermediate/retarget_mode = 1
+RightMiddleProximal/retarget_mode = 1
+LeftIndexDistal/retarget_mode = 1
+RightThumbProximal/retarget_mode = 1
+LeftThumbDistal/retarget_mode = 1
+LeftLittleDistal/retarget_mode = 1
+LeftIndexIntermediate/retarget_mode = 1
+LeftMiddleProximal/retarget_mode = 1
+LeftMiddleIntermediate/retarget_mode = 1
+RightLittleProximal/retarget_mode = 1
+RightLittleIntermediate/retarget_mode = 1
+RightLittleDistal/retarget_mode = 1
+LeftThumbIntermediate/retarget_mode = 1
+LeftLittleProximal/retarget_mode = 1
+RightRingIntermediate/retarget_mode = 1
+RightRingDistal/retarget_mode = 1
+RightMiddleDistal/retarget_mode = 1
+LeftMiddleDistal/retarget_mode = 1
+LeftLittleIntermediate/retarget_mode = 1
