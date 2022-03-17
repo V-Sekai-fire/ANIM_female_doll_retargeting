@@ -397,7 +397,9 @@ func _create_animation_player(animplayer: AnimationPlayer, vrm_extension: Dictio
 			var node: ImporterMeshInstance3D = mesh_idx_to_meshinstance[mesh_and_surface_idx[0]]
 			var surface_idx = mesh_and_surface_idx[1]
 
-			var mat: Material = node.get_surface_material(surface_idx)
+			var mat: Material = node.get_mesh().get_surface_material(surface_idx)
+			if not matbind.has("parameterName"):
+				continue
 			var paramprop = "shader_param/" + matbind["parameterName"]
 			var origvalue = null
 			var tv = matbind["targetValue"]
