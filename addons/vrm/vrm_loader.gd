@@ -367,9 +367,9 @@ func _create_animation_player(animplayer: AnimationPlayer, vrm_extension: Dictio
 	for i in range(gstate.get_animation_players_count(0)):
 		var node: AnimationPlayer = gstate.get_animation_player(i)
 		node.get_parent().remove_child(node)
+
 	var meshes = gstate.get_meshes()
 	var nodes = gstate.get_nodes()
-	
 	var blend_shape_groups = vrm_extension["blendShapeMaster"]["blendShapeGroups"]
 	# FIXME: Do we need to handle multiple references to the same mesh???
 	var mesh_idx_to_meshinstance : Dictionary = {}
@@ -883,4 +883,7 @@ func _import_scene_internal(version: int, orig_json_utf8: PackedByteArray, rest_
 
 		_parse_secondary_node(secondary_node, vrm_extension, gstate)
 
-	return root_node
+	# Remove references
+	var packed_scene: PackedScene = PackedScene.new()
+	packed_scene.pack(root_node)
+	return packed_scene.instantiate(PackedScene.GEN_EDIT_STATE_INSTANCE)

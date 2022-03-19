@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://cih3pe4qwgl27"]
+[gd_scene load_steps=9 format=3]
 
 [ext_resource type="PackedScene" uid="uid://cddxvv45sfebh" path="res://animation_retargeting_demo/art/ANIM_No_Logic_David_Banyan_Dance/[No Logic David] Banyan Dance - PartyWave (krump)-VNfYmEU4IvM.glb" id="1_m3ccr"]
 [ext_resource type="RetargetRichProfile" path="res://animation_retargeting_demo/profiles/gd_humanoid_with_root.tres" id="2_mukwm"]
@@ -436,7 +436,6 @@ bones/43/rotation = Quaternion(0.00982998, -0.00984355, -0.0340805, 0.999322)
 bones/44/rotation = Quaternion(-7.44952e-09, 1.28323e-05, -1.17668e-06, 1)
 bones/45/position = Vector3(-2.45961e-07, 0.021142, 1.05708e-08)
 bones/46/rotation = Quaternion(0.00983, -0.00982899, -0.0340822, 0.999322)
-bones/46/scale = Vector3(1, 1, 1)
 bones/47/position = Vector3(5.18521e-07, 0.0315401, 7.76069e-09)
 bones/47/rotation = Quaternion(-3.68053e-08, -1.13543e-07, 1.98662e-06, 1)
 bones/48/position = Vector3(3.11907e-07, 0.029377, 2.53698e-08)
