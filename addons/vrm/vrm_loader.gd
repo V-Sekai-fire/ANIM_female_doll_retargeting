@@ -65,7 +65,7 @@ func _vrm_get_texture_info(gltf_images: Array, vrm_mat_props: Dictionary, unity_
 	texture_info["scale"] = Vector3(1.0, 1.0, 1.0)
 	if vrm_mat_props["textureProperties"].has(unity_tex_name):
 		var mainTexId: int = vrm_mat_props["textureProperties"][unity_tex_name]
-		var mainTexImage: ImageTexture = gltf_images[mainTexId]
+		var mainTexImage: Texture2D = gltf_images[mainTexId]
 		texture_info["tex"] = mainTexImage
 	if vrm_mat_props["vectorProperties"].has(unity_tex_name):
 		var offsetScale: Array = vrm_mat_props["vectorProperties"][unity_tex_name]
@@ -368,6 +368,8 @@ func _create_animation_player(animplayer: AnimationPlayer, vrm_extension: Dictio
 		var node: AnimationPlayer = gstate.get_animation_player(i)
 		node.get_parent().remove_child(node)
 
+	var animation_library : AnimationLibrary = AnimationLibrary.new()
+	
 	var meshes = gstate.get_meshes()
 	var nodes = gstate.get_nodes()
 	var blend_shape_groups = vrm_extension["blendShapeMaster"]["blendShapeGroups"]
@@ -397,9 +399,7 @@ func _create_animation_player(animplayer: AnimationPlayer, vrm_extension: Dictio
 			var node: ImporterMeshInstance3D = mesh_idx_to_meshinstance[mesh_and_surface_idx[0]]
 			var surface_idx = mesh_and_surface_idx[1]
 
-			var mat: Material = node.get_mesh().get_surface_material(surface_idx)
-			if not matbind.has("parameterName"):
-				continue
+			var mat: Material = node.get_surface_material(surface_idx)
 			var paramprop = "shader_param/" + matbind["parameterName"]
 			var origvalue = null
 			var tv = matbind["targetValue"]
@@ -451,15 +451,15 @@ func _create_animation_player(animplayer: AnimationPlayer, vrm_extension: Dictio
 			#print("Bind weight: " + str(float(bind["weight"]) / 100.0))
 
 		# https://github.com/vrm-c/vrm-specification/tree/master/specification/0.0#blendshape-name-identifier
-		animplayer.add_animation(shape["name"].to_upper() if shape["presetName"] == "unknown" else shape["presetName"].to_upper(), anim)
+		animation_library.add_animation(shape["name"].to_upper() if shape["presetName"] == "unknown" else shape["presetName"].to_upper(), anim)
 
 	var firstperson = vrm_extension["firstPerson"]
 	
 	var firstpersanim: Animation = Animation.new()
-	animplayer.add_animation("FirstPerson", firstpersanim)
+	animation_library.add_animation("FirstPerson", firstpersanim)
 
 	var thirdpersanim: Animation = Animation.new()
-	animplayer.add_animation("ThirdPerson", thirdpersanim)
+	animation_library.add_animation("ThirdPerson", thirdpersanim)
 
 	var skeletons:Array = gstate.get_skeletons()
 
@@ -469,32 +469,12 @@ func _create_animation_player(animplayer: AnimationPlayer, vrm_extension: Dictio
 		var skeletonPath:NodePath = animplayer.get_parent().get_path_to(_get_skel_godot_node(gstate, nodes, skeletons, headNode.skeleton))
 		var headBone: String = headNode.resource_name
 		var headPath = str(skeletonPath) + ":" + headBone
-			
-		var rotate_skeleton : Skeleton3D = _get_skel_godot_node(gstate, nodes, gstate.get_skeletons(), nodes[vrm_extension["firstPerson"].get("firstPersonBone", -1)].skeleton)
-		var bone_rest : Transform3D = rotate_skeleton.get_bone_rest(0)
-		var rot : Basis = Basis().from_euler(Vector3(0, deg2rad(180), 0))
-		var flip : Transform3D = Transform3D(rot, Vector3())
-		bone_rest = bone_rest * flip
-		rotate_skeleton.set_bone_rest(0, bone_rest)
-		rotate_skeleton.rotate(Vector3(0, 1, 0), deg2rad(180))
-
 		var firstperstrack = firstpersanim.add_track(Animation.TYPE_SCALE_3D)
 		firstpersanim.track_set_path(firstperstrack, headPath)
 		firstpersanim.scale_track_insert_key(firstperstrack, 0.0, Vector3(0.00001, 0.00001, 0.00001))
 		var thirdperstrack = thirdpersanim.add_track(Animation.TYPE_SCALE_3D)
 		thirdpersanim.track_set_path(thirdperstrack, headPath)
 		thirdpersanim.scale_track_insert_key(thirdperstrack, 0.0, Vector3.ONE)
-		animplayer.retarget_profile = load("res://animation_retargeting_demo/profiles/gd_humanoid_with_root.tres")
-		animplayer.retarget_skeleton = animplayer.get_path_to(_get_skel_godot_node(gstate, nodes, gstate.get_skeletons(), headNode.skeleton))
-		var bone_map : RetargetBoneMap = RetargetBoneMap.new()
-		var human_bones = vrm_extension["humanoid"]["humanBones"]
-		for bone in human_bones:
-			var human_bone_name : StringName = bone.bone
-			var skeleton_bone_name : StringName = nodes[bone.node].resource_name
-			var profile_bone_name : StringName = String(human_bone_name).left(1).to_upper() + String(human_bone_name).right(-1) 
-			bone_map.add_key(profile_bone_name)
-			bone_map.set_bone_name(profile_bone_name, skeleton_bone_name)
-		animplayer.retarget_map = bone_map
 
 	for meshannotation in firstperson["meshAnnotations"]:
 
@@ -540,7 +520,7 @@ func _create_animation_player(animplayer: AnimationPlayer, vrm_extension: Dictio
 		var anim: Animation = null
 		if not animplayer.has_animation("LOOKLEFT"):
 			anim = Animation.new()
-			animplayer.add_animation("LOOKLEFT", anim)
+			animation_library.add_animation("LOOKLEFT", anim)
 		anim = animplayer.get_animation("LOOKLEFT")
 		if anim and lefteye > 0 and righteye > 0:
 			var animtrack: int = anim.add_track(Animation.TYPE_ROTATION_3D)
@@ -556,7 +536,7 @@ func _create_animation_player(animplayer: AnimationPlayer, vrm_extension: Dictio
 
 		if not animplayer.has_animation("LOOKRIGHT"):
 			anim = Animation.new()
-			animplayer.add_animation("LOOKRIGHT", anim)
+			animation_library.add_animation("LOOKRIGHT", anim)
 		anim = animplayer.get_animation("LOOKRIGHT")
 		if anim and lefteye > 0 and righteye > 0:
 			var animtrack: int = anim.add_track(Animation.TYPE_ROTATION_3D)
@@ -572,7 +552,7 @@ func _create_animation_player(animplayer: AnimationPlayer, vrm_extension: Dictio
 
 		if not animplayer.has_animation("LOOKUP"):
 			anim = Animation.new()
-			animplayer.add_animation("LOOKUP", anim)
+			animation_library.add_animation("LOOKUP", anim)
 		anim = animplayer.get_animation("LOOKUP")
 		if anim and lefteye > 0 and righteye > 0:
 			var animtrack: int = anim.add_track(Animation.TYPE_ROTATION_3D)
@@ -588,7 +568,7 @@ func _create_animation_player(animplayer: AnimationPlayer, vrm_extension: Dictio
 
 		if not animplayer.has_animation("LOOKDOWN"):
 			anim = Animation.new()
-			animplayer.add_animation("LOOKDOWN", anim)
+			animation_library.add_animation("LOOKDOWN", anim)
 		anim = animplayer.get_animation("LOOKDOWN")
 		if anim and lefteye > 0 and righteye > 0:
 			var animtrack: int = anim.add_track(Animation.TYPE_ROTATION_3D)
@@ -601,6 +581,7 @@ func _create_animation_player(animplayer: AnimationPlayer, vrm_extension: Dictio
 			anim.track_set_interpolation_type(animtrack, Animation.INTERPOLATION_LINEAR)
 			anim.rotation_track_insert_key(animtrack, 0.0, Quaternion.IDENTITY)
 			anim.rotation_track_insert_key(animtrack, vertdown["xRange"] / 90.0, Basis(Vector3(1,0,0), -vertdown["yRange"] * 3.14159/180.0).get_rotation_quaternion())
+	animplayer.add_animation_library("", animation_library)
 	return animplayer
 
 

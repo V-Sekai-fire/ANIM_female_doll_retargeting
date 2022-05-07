@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://u6pktn46aeld"
-path="res://.godot/imported/gd_humanoid_left_hand.png-cfa2d1446a78312efb292032f433dc68.ctex"
+uid="uid://f3h7j21cbbav"
+path="res://.godot/imported/FemaleDoll_Bake_Col_01.png-9ea53c91b40b1ccb789a6ef3726aae0c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://animation_retargeting_demo/profiles/gd_humanoid_left_hand.png"
-dest_files=["res://.godot/imported/gd_humanoid_left_hand.png-cfa2d1446a78312efb292032f433dc68.ctex"]
+source_file="res://animation_retargeting_demo/art/SK_female_doll/textures/FemaleDoll_Bake_Col_01.png"
+dest_files=["res://.godot/imported/FemaleDoll_Bake_Col_01.png-9ea53c91b40b1ccb789a6ef3726aae0c.ctex"]
 
 [params]
 

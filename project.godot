@@ -9,67 +9,13 @@
 config_version=5
 
 _global_script_classes=[{
-"base": "Resource",
-"class": &"HumanoidData",
-"language": &"GDScript",
-"path": "res://addons/vsk_avatar/humanoid_data.gd"
-}, {
-"base": "NetworkLogic",
-"class": &"NetworkHierarchy",
-"language": &"GDScript",
-"path": "res://addons/network_manager/network_hierarchy.gd"
-}, {
-"base": "",
-"class": &"NetworkIdentity",
-"language": &"GDScript",
-"path": "res://addons/network_manager/network_identity.gd"
-}, {
-"base": "",
-"class": &"NetworkLogic",
-"language": &"GDScript",
-"path": "res://addons/network_manager/network_logic.gd"
-}, {
-"base": "NetworkLogic",
-"class": &"NetworkPhysics",
-"language": &"GDScript",
-"path": "res://addons/network_manager/network_physics.gd"
-}, {
-"base": "",
-"class": &"NetworkRPCTable",
-"language": &"GDScript",
-"path": "res://addons/network_manager/network_rpc_table.gd"
-}, {
-"base": "Position3D",
-"class": &"NetworkSpawn",
-"language": &"GDScript",
-"path": "res://addons/network_manager/network_spawn.gd"
-}, {
-"base": "NetworkLogic",
-"class": &"NetworkTransform",
-"language": &"GDScript",
-"path": "res://addons/network_manager/network_transform.gd"
-}, {
 "base": "Node3D",
 "class": &"VRMTopLevel",
 "language": &"GDScript",
 "path": "res://addons/vrm/vrm_toplevel.gd"
-}, {
-"base": "Resource",
-"class": &"VSKMapEntityInstanceRecord",
-"language": &"GDScript",
-"path": "res://addons/vsk_map/vsk_map_entity_instance_record.gd"
 }]
 _global_script_class_icons={
-"HumanoidData": "",
-"NetworkHierarchy": "",
-"NetworkIdentity": "",
-"NetworkLogic": "",
-"NetworkPhysics": "",
-"NetworkRPCTable": "",
-"NetworkSpawn": "",
-"NetworkTransform": "",
-"VRMTopLevel": "",
-"VSKMapEntityInstanceRecord": ""
+"VRMTopLevel": ""
 }
 
 [application]
@@ -77,7 +23,7 @@ _global_script_class_icons={
 config/name="Skeleton Female Doll Project"
 run/main_scene="res://animation_retargeting_demo/art/ANIM_perfume/scenes/node_3d.scn"
 config/icon="res://icon.png"
-config/features=PackedStringArray("4.0", "Double Precision", "Vulkan Clustered")
+config/features=PackedStringArray("4.0", "Vulkan Clustered")
 
 [autoload]
 
