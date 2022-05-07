@@ -1,12 +1,12 @@
 [gd_scene load_steps=9 format=3]
 
-[ext_resource type="PackedScene" uid="uid://cddxvv45sfebh" path="res://animation_retargeting_demo/art/ANIM_No_Logic_David_Banyan_Dance/[No Logic David] Banyan Dance - PartyWave (krump)-VNfYmEU4IvM.glb" id="1_m3ccr"]
+[ext_resource type="PackedScene" path="res://animation_retargeting_demo/art/ANIM_No_Logic_David_Banyan_Dance/[No Logic David] Banyan Dance - PartyWave (krump)-VNfYmEU4IvM.glb" id="1_m3ccr"]
 [ext_resource type="RetargetRichProfile" path="res://animation_retargeting_demo/profiles/gd_humanoid_with_root.tres" id="2_mukwm"]
-[ext_resource type="PackedScene" uid="uid://d48fy4uvwp3n" path="res://animation_retargeting_demo/art/SK_female_doll/female_doll_2022_03_05_03.glb" id="3_oj7v8"]
-[ext_resource type="PackedScene" uid="uid://baftw5t4666kr" path="res://animation_retargeting_demo/art/text/VRM.gltf.glb" id="4_ba5fd"]
+[ext_resource type="PackedScene" path="res://animation_retargeting_demo/art/SK_female_doll/female_doll_2022_03_05_03.glb" id="3_oj7v8"]
+[ext_resource type="PackedScene" path="res://animation_retargeting_demo/art/text/VRM.gltf.glb" id="4_ba5fd"]
 [ext_resource type="RetargetRichProfile" path="res://animation_retargeting_demo/profiles/gd_humanoid.tres" id="5_bv6kj"]
-[ext_resource type="RetargetBoneMap" uid="uid://b3f71oxnmqv2e" path="res://animation_retargeting_demo/art/models/vrm.tres" id="5_i2sk1"]
-[ext_resource type="RetargetBoneMap" uid="uid://b41gxip8w12xa" path="res://animation_retargeting_demo/art/models/female_doll_map.tres" id="7_jeifn"]
+[ext_resource type="RetargetBoneMap" path="res://animation_retargeting_demo/art/models/vrm.tres" id="5_i2sk1"]
+[ext_resource type="RetargetBoneMap" path="res://animation_retargeting_demo/art/models/female_doll_map.tres" id="7_jeifn"]
 
 [sub_resource type="Animation" id="Animation_knr0s"]
 resource_name = "mixamocom"
